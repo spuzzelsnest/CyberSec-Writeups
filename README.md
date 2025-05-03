@@ -2,8 +2,9 @@
 
 Index
 
-Link to the Linux Distro's: [Link Text](#linux-distro).
-Link to the Packages: [Link Text](#packages).
+- [Linux Distro's](#linux-distro).
+
+- [Packages](#packages).
 
 ## Base Station
 ### Linux Distro
