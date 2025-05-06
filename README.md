@@ -20,8 +20,10 @@ _[Helpfull Tutorial](https://medium.com/@gulfsteve/hacking-with-wsl2-ede3e649e08
 ### Linux Distro
 
 - Kali
+  
     :arrow_down: [Choose your ISO - Download Page](https://www.kali.org/get-kali/#kali-platforms)
 - Parrot OS
+
     :arrow_down: [Choose your ISO - Download Page](https://parrotsec.org/download/)
 - Build your own
     You can start setting up your own station by just downloading a clean Ubuntu or Debian Distro.
