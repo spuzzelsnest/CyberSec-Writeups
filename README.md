@@ -5,7 +5,7 @@ Index
 - [Packages](#packages)
 
 ## Base Station
-Some people choose to have a dedicated machine, some choose to run everything in virtual machines. As I will not go over everyt part of the Setup of a base machine for Cyber Security. I will just propose other peoples work.
+Some people choose to have a dedicated machine, some choose to run everything in virtual machines. As I will not go over everyt part of the setup of a base station, I will reference other peoples work that I found helpfull.
 
 ### Virtual Machines
 For the people running from a virtual machine, there are a couple of free options. 
