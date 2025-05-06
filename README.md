@@ -20,13 +20,14 @@ _[Helpfull Tutorial](https://medium.com/@gulfsteve/hacking-with-wsl2-ede3e649e08
 ### Linux Distro
 
 - Kali
-    [Choose your ISO - Download Page](https://www.kali.org/get-kali/#kali-platforms)
+    :arrow_down: [Choose your ISO - Download Page](https://www.kali.org/get-kali/#kali-platforms)
 - Parrot OS
-    [Choose your ISO - Download Page](https://parrotsec.org/download/)
+    :arrow_down: [Choose your ISO - Download Page](https://parrotsec.org/download/)
 - Build your own
     You can start setting up your own station by just downloading a clean Ubuntu or Debian Distro.
 
 ## Packages
 ### Recon
 - nmap
-  
+  Nmap (“Network Mapper”) is an open source tool for network exploration and security auditing... more info on [the nmap website ](https://nmap.org)
+
