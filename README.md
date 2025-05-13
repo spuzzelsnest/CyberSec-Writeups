@@ -194,12 +194,13 @@ netcat or nc is a network multipurpose network debugging tool, but mostly associ
 These tools automate the work off enumaration by using a predefind set of characters or dictionary to go to every possible combination, feeding the tool to guess a possible success.
 As this enumeration is done through CPU or GPU cycles and happens, depending on the machine, in mear seconds of what a human could input. These tools can be verry noisy, so they should be used carefully.
 
-<ins>Dirbuster</ins>
+<ins>wordlist</ins>
+To use dictionary attacs, a wordlist is needed. Some linux distro's come with their own available dictionaries. You can probably find them under ``` /usr/share/wordlists ```
 
-This tools is used for website file and folder enumeration which can be usefull to find hidden folders on a webserver. It uses a wordlist to go through GET request.
+<ins>Dirbuster / Gobuster</ins>
 
+These tools is used for website file and folder enumeration which can be usefull to find hidden folders on a webserver. It uses a wordlist to go through GET request.
 
-<ins>Gobuster</ins>
 
 Example:
 ```
