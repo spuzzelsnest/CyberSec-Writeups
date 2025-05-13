@@ -81,6 +81,7 @@ Some curl examples:
 
 #### Recon Tools
 <ins>NMAP</ins>
+
 Nmap the “Network Mapper”, is an open source tool for network exploration and security auditing... more info on [the nmap website ](https://nmap.org)
 
 ```
@@ -89,13 +90,16 @@ Nmap the “Network Mapper”, is an open source tool for network exploration an
 ```
 
 <ins>Enum4linux</ins>
+
 With this tool enumeration of SMB shares, on both Windows and Linux systems, is made straigh forward. It is basically a wrapper around the tools in the Samba package and makes it easy to quickly extract information from the target pertaining to SMB. It's installed by default on Parrot and Kali, however if you need to install it, you can do so from the official github.
 The syntax of Enum4Linux is nice and simple: "enum4linux [options] ip"
 
 <ins>FFUF</ins>
+
 Short for Fuzz Faster U Fool. A Go Language user enumeration tool for web applications.
 
 <ins>smbmap / smbclient</ins>
+
 These tools are used for enumerating smbshares on default ports 139 and 445 from a targeted devices.
 
 ```
@@ -108,6 +112,7 @@ These tools are used for enumerating smbshares on default ports 139 and 445 from
 Once you are connected to the SMB server, you can find all the commands that smbclient knows by typing ‘help’. Some commenly used are ls, cd, chmod, mget
 
 <ins>wpscan</ins>
+
 This tool is used to enumerate Wordpress websites.
 
 ```
@@ -145,6 +150,7 @@ Installing metasploit:
 In brute force tools we use wordlist or dictionaries to guess what
 
 <ins>Dirbuster</ins>
+
 This tools is used for website file and folder enumeration which can be usefull to find hidden folders on a webserver. It uses a wordlist to go through GET request.
 
 
@@ -157,15 +163,15 @@ Example:
 ```
 
 <ins>Hydra</ins>
+
 Hydra is a very fast online password cracking tool, which can perform rapid dictionary attacks against more than 50 Protocols, including Telnet, RDP, SSH, FTP, HTTP, HTTPS, SMB, several databases and much more. Hydra comes by default on both Parrot and Kali, however if you need it, you can find the GitHub here.
 The syntax for the command we're going to use to find the passwords is this:
-hydra -t 4 -l dale -P /usr/share/wordlists/rockyou.txt -vV [TARGET IP] ftp
+
+```
+    hydra -t 4 -l dale -P /usr/share/wordlists/rockyou.txt -vV [TARGET IP] ftp
+
+```
 
 <ins>John</ins>
+
 Also known as John the ripper is a multi brute force tool
-
-
-
-
-
-
