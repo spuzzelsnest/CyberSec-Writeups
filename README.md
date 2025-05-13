@@ -21,7 +21,7 @@ You can run your base station as a virtual machine on Windows, there are a coupl
 
 - <ins>VMWare</ins>
 
-    [NAKIVO Team](https://www.nakivo.com/blog/install-kali-linux-vmware/)
+    [By NAKIVO Team](https://www.nakivo.com/blog/install-kali-linux-vmware/)
 
 - <ins>Virtual Box</ins>
 
@@ -29,7 +29,8 @@ You can run your base station as a virtual machine on Windows, there are a coupl
 
 - <ins>WSL (2.0)</ins>
 
-    Windows subsystem for Linux is also a handy way to start with a Cyber Securtiy workstation. This will allow you to run linux native commands from within the native Winodws Command line. 
+    Windows subsystem for Linux is also a handy way to start with a Cyber Securtiy workstation. This will allow you to run linux native commands from within the native Winodws Command line.
+
     [By Steve McIlwain](https://medium.com/@gulfsteve/hacking-with-wsl2-ede3e649e08d)
 
 
