@@ -131,7 +131,7 @@ These tools are used for enumerating smbshares on default ports 139 and 445 from
 ```
     smbmap -H [TARGET-IP]
 
-    smbclient //[TARGET-IP/SHARE -U %
+    smbclient //[TARGET-IP/SHARE] -U %
 
 ```
 
@@ -149,11 +149,11 @@ This tool is used to enumerate Wordpress websites.
 ### Weaponization
 Weaponization, the second phase of the cyber kill chain following reconnaissance, involves creating malicious payloads designed to exploit identified vulnerabilities. Upon successful delivery and execution, these weaponized payloads deploy malware, leading to system compromise. Knowing file extentions and how files are recognized by anti virus software, this will help you in how to use file obfuscation to your benefits.
 
-An example would be Malicious Macro
+An example would be a Malicious Macro
 
-A macro is an automated input sequence that imitates keystrokes or mouse actions. A macro is typically used to replace a repetitive series of keyboard and mouse actions and are common in spreadsheet and word processing applications like MS Excel and MS Word. A malicious macro, or macro virus is a computer virus that replaces a macro. When these actions and commands are replaced by a virus, this can cause significant harm to a computer.
+A macro is an automated input sequence that imitates keystrokes or mouse actions. A macro is typically used to replace a repetitive series of keyboard and mouse actions and are common in spreadsheet and word processing applications like MS Excel and MS Word. A malicious macro, or macro virus is a computer virus that replaces a macro. When these actions and commands are replaced by a reverse shell, this can cause significant harm to a computer.
 
-Inserted in this weaponized file will be a shell. This can simply be described as a piece of code or program which can be used to gain code or command execution on a device. A reverse shell is a type of shell in which the target machine communicates back to the attacking machine. Commonly a script is run on the target machine which tries to call back to the attachers machine. On the attakers machine a listening tool is waiting for the incomming connection.
+This reverse shell can simply be described as a piece of code or program which can be used to gain command execution on a device. A reverse shell is a type of shell in which the target machine communicates back to the attacking machine. Commonly a script is run on the target machine which tries to call back to the attachers machine. On the attakers machine a listening tool like netcat, is waiting for the incomming connection.
 
 #### Weaponization Tools
 With the help of tools like Metasploit Malicious Macros can be compiled.
