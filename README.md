@@ -5,17 +5,7 @@ Index
 - [Packages](#packages)
 
 ## Base Station
-Some people choose to have a dedicated machine, some choose to run everything in virtual machines. As I will not go over everyt part of the setup of a base station, I will reference other peoples work that I found helpfull.
-
-### Virtual Machines
-For the people running from a virtual machine, there are a couple of free options. 
-- Vmware
-  
-- Virtual Box
-
-- WSL (2.0)
-Windows subsystem for Linux is also a handy way to start with a Cyber Securtiy workstation. This will allow you to run linux native commands from within the native Winodws Command line.
-_[Helpfull Tutorial](https://medium.com/@gulfsteve/hacking-with-wsl2-ede3e649e08d)_
+Some people choose to have a dedicated machine, some choose to run everything in virtual machines. As I will not go over every part of the setup of a base station, I will reference other peoples work that I found helpfull.
 
 ### Linux Distro
 
@@ -27,6 +17,23 @@ _[Helpfull Tutorial](https://medium.com/@gulfsteve/hacking-with-wsl2-ede3e649e08
     :arrow_down: [Choose your ISO - Download Page](https://parrotsec.org/download/)
 - Build your own
     You can start setting up your own station by just downloading a clean Ubuntu or Debian Distro.
+
+
+### Virtual Machines
+For the people running from a virtual machine on Windows, there are a couple of free options. All come with there own drawbacks.
+
+- <ins>VMware</ins>
+
+    [NAKIVO Team](https://www.nakivo.com/blog/install-kali-linux-vmware/)
+
+- <ins>Virtual Box</ins>
+
+    [By Marko Aleksic](https://phoenixnap.com/kb/how-to-install-kali-linux-on-virtualbox)
+
+- <ins>WSL (2.0)</ins>
+
+Windows subsystem for Linux is also a handy way to start with a Cyber Securtiy workstation. This will allow you to run linux native commands from within the native Winodws Command line.
+    _[Helpfull Tutorial](https://medium.com/@gulfsteve/hacking-with-wsl2-ede3e649e08d)_
 
 
 ## Cyber Kill Chain
