@@ -6,15 +6,15 @@ Some people choose to have a dedicated machine, some choose to run everything in
 
 ### Linux Distro
 
-- Kali
+- <ins>Kali</ins>
   
     :arrow_down: [Choose your ISO - Download Page](https://www.kali.org/get-kali/#kali-platforms)
-- Parrot OS
+- <ins>Parrot OS</ins>
 
     :arrow_down: [Choose your ISO - Download Page](https://parrotsec.org/download/)
-- Build your own
-    You can start setting up your own station by just downloading a clean Ubuntu or Debian Distro.
+- <ins>Build your own</ins>
 
+    You can start setting up your own station by just downloading a clean Ubuntu or Debian Distro and add the described tools.
 
 ### Virtual Machines
 For the people running from a virtual machine on Windows, there are a couple of free options. All come with there own drawbacks.
@@ -29,8 +29,8 @@ For the people running from a virtual machine on Windows, there are a couple of 
 
 - <ins>WSL (2.0)</ins>
 
-Windows subsystem for Linux is also a handy way to start with a Cyber Securtiy workstation. This will allow you to run linux native commands from within the native Winodws Command line.
-    _[Helpfull Tutorial](https://medium.com/@gulfsteve/hacking-with-wsl2-ede3e649e08d)_
+    Windows subsystem for Linux is also a handy way to start with a Cyber Securtiy workstation. This will allow you to run linux native commands from within the native Winodws Command line. 
+    [By Steve McIlwain](https://medium.com/@gulfsteve/hacking-with-wsl2-ede3e649e08d)
 
 
 ## Cyber Kill Chain
@@ -138,6 +138,14 @@ With the help of tools like Metasploit Malicious Macros can be compiled.
 ### Delivery
 The art of getting your weaponized file to your Target. this can happen by mail or through file sharing.
 
+For example, if you need to setup a quick webserver you can use python, or if php is available, to do this.
+```
+    python3 -m http.server
+
+    php -S 0.0.0.0:8000
+
+```
+
 ### Exploitation
 In the Exploitation phase, the malicious code is executed within the victim’s system.
 
@@ -147,6 +155,14 @@ In the Exploitation phase, the malicious code is executed within the victim’s 
 Installing metasploit:
 ```
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
+
+```
+
+<ins>netcat</ins>
+netcat or nc is a network multipurpose network debugging tool, but mostly associated with exploitation, as it is capable to be used as a listening device for reverse connections.
+
+```
+    nc -vnlp 6969
 
 ```
 
@@ -179,3 +195,19 @@ The syntax for the command we're going to use to find the passwords is this:
 <ins>John</ins>
 
 Also known as John the ripper is a multi brute force tool
+
+
+### Command & Control and Post Exploitation
+Once you have controll of a system and have an active shell, you should take a couple of steps back. Will persistance be needed or is it a quick in-out mission?
+First lest go over root access before going of persistance.
+
+If a linux shell is provide of for instance a webserver, you need to find out what permissions is granted to the user you are currently logged in with.
+
+
+```
+    whoami
+
+```
+
+Next you will need to find out if permissions are granted to elevate your current permissions.
+
