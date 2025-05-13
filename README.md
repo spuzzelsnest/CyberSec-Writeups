@@ -77,15 +77,7 @@ Ports 0 through 1023 are defined as well-known ports. Registered ports are from 
 <ins>Website reconnaissance</ins>
 When visiting a website via a browser, when clicking or typing the URL a lot of stuff goes on in the back. GET and REDIRECT request happen in a split second before you see the website apear in your browser.
 To summarise, when you request a website, your computer needs to know the server's IP address it needs to talk to; for this, it uses DNS. Your computer then talks to the web server using a special set of commands called the HTTP protocol; the webserver then returns HTML, JavaScript, CSS, Images, etc., which your browser then uses to correctly format and display the website to you.
-A lot of other tools can be used to view a information of a website besides a browser. I am referring to tools like: curl, wget, nslookup, dig, who can give info on and many others. 
-Some curl examples:
-
-```
-    curl http://10.10.44.138/cookie-test
-    
-    curl -H "Cookie: logged_in=true; admin=true" http://10.10.44.138/cookie-test
-
-```
+A lot of other tools can be used to view a information of a website besides a browser. I am referring to tools like: curl, wget, nslookup, dig, who can give info on and many others.
 
 #### Recon Tools
 <ins>NMAP</ins>
