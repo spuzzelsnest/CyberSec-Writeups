@@ -1,8 +1,5 @@
 # CyberSec-Writeups
-Index
-
-- [Linux Distro's](#linux-distro)
-- [Packages](#packages)
+This is an introductional writeup on how to setup a base station for a Capture the Flag game, with the introduction of some base tools.
 
 ## Base Station
 Some people choose to have a dedicated machine, some choose to run everything in virtual machines. As I will not go over every part of the setup of a base station, I will reference other peoples work that I found helpfull.
