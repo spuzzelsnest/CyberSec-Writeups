@@ -55,7 +55,9 @@ According to Lockheed Martin, the Cyber Kill Chain looks like this:
 
 
 ### Recon
-Recon, short for reconnaissance, refers to the step where the attacker tries to learn as much as possible about the target. Information such as the types of servers, operating system, IP addresses, names of users, and email addresses, can help the attack’s success. During the recon stage, a lot of enumeration will be done.<br>Enumeration is the process of gathering information on a target in order to find potential attack vectors and aid in exploitation. This process is essential for an attack to be successful, as wasting time with exploits that either don't work or can crash the system can be a waste of energy. Enumeration can be used to gather usernames, passwords, network information, hostnames, application data, services, or any other information that may be valuable to an attacker.
+Recon, short for reconnaissance, refers to the step where the attacker tries to learn as much as possible about the target. Information such as the types of servers, operating system, IP addresses, names of users, and email addresses, can help the attack’s success. During the recon stage, a lot of enumeration will be done.
+
+Enumeration is the process of gathering information on a target in order to find potential attack vectors and aid in exploitation. This process is essential for an attack to be successful, as wasting time with exploits that either don't work or can crash the system can be a waste of energy. Enumeration can be used to gather usernames, passwords, network information, hostnames, application data, services, or any other information that may be valuable to an attacker.
 
 One part of Recon is Network reconnaissance. A network interface has 65.535 ports which are used for UDP User Datagram Protocol, a connectionless communication, and TCP conection oriented traffic. 
 Ports 0 through 1023 are defined as well-known ports. Registered ports are from 1024 to 49151. The remainder of the ports from 49152 to 65535 can be used dynamically by applications. A brief description of these are as follows:
