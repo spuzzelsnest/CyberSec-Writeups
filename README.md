@@ -71,14 +71,22 @@ When visiting a website via a browser, when clicking or typing the URL a lot of 
 To summarise, when you request a website, your computer needs to know the server's IP address it needs to talk to; for this, it uses DNS. Your computer then talks to the web server using a special set of commands called the HTTP protocol; the webserver then returns HTML, JavaScript, CSS, Images, etc., which your browser then uses to correctly format and display the website to you.
 A lot of other tools can be used to view a information of a website besides a browser. I am referring to tools like: curl, wget, nslookup, dig, who can give info on and many others. 
 Some curl examples:
-- curl http://10.10.44.138/cookie-test
-- curl -H "Cookie: logged_in=true; admin=true" http://10.10.44.138/cookie-test
 
+```
+    curl http://10.10.44.138/cookie-test
+    
+    curl -H "Cookie: logged_in=true; admin=true" http://10.10.44.138/cookie-test
+
+```
 
 #### Recon Tools
 <ins>NMAP</ins>
 Nmap the “Network Mapper”, is an open source tool for network exploration and security auditing... more info on [the nmap website ](https://nmap.org)
+
+```
     nmap -h
+
+```
 
 <ins>Enum4linux</ins>
 With this tool enumeration of SMB shares, on both Windows and Linux systems, is made straigh forward. It is basically a wrapper around the tools in the Samba package and makes it easy to quickly extract information from the target pertaining to SMB. It's installed by default on Parrot and Kali, however if you need to install it, you can do so from the official github.
@@ -89,15 +97,23 @@ Short for Fuzz Faster U Fool. A Go Language user enumeration tool for web applic
 
 <ins>smbmap / smbclient</ins>
 These tools are used for enumerating smbshares on default ports 139 and 445 from a targeted devices.
+
+```
     smbmap -H [TARGET-IP]
 
     smbclient //[TARGET-IP/SHARE -U %
 
+```
+
 Once you are connected to the SMB server, you can find all the commands that smbclient knows by typing ‘help’. Some commenly used are ls, cd, chmod, mget
 
 <ins>wpscan</ins>
-THis tool is used to enumerate Wordpress websites.
+This tool is used to enumerate Wordpress websites.
+
+```
     wpscan -h
+
+```
 
 ### Weaponization
 Weaponization, the second phase of the cyber kill chain following reconnaissance, involves creating malicious payloads designed to exploit identified vulnerabilities. Upon successful delivery and execution, these weaponized payloads deploy malware, leading to system compromise. Knowing file extentions and how files are recognized by anti virus software, this will help you in how to use file obfuscation to your benefits.
@@ -119,8 +135,11 @@ In the Exploitation phase, the malicious code is executed within the victim’s 
 #### Exploitation Tools
 <ins>Metasploit</ins>
 
-Installing metasploit 
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
+Installing metasploit:
+```
+    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
+
+```
 
 ### Brute force tools
 In brute force tools we use wordlist or dictionaries to guess what
@@ -132,7 +151,10 @@ This tools is used for website file and folder enumeration which can be usefull 
 <ins>Gobuster</ins>
 
 Example:
-jack@baby-blue:~$ gobuster dir -u http://overwrite.uploadvulns.thm -w /home/jack/sjan/_wordlist/directory-list-2.3-medium.txt
+```
+    gobuster dir -u http://[TARGET_URL] -w wordlist/directory-list-2.3-medium.txt
+
+```
 
 <ins>Hydra</ins>
 Hydra is a very fast online password cracking tool, which can perform rapid dictionary attacks against more than 50 Protocols, including Telnet, RDP, SSH, FTP, HTTP, HTTPS, SMB, several databases and much more. Hydra comes by default on both Parrot and Kali, however if you need it, you can find the GitHub here.
