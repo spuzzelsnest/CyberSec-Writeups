@@ -31,19 +31,19 @@ _[Helpfull Tutorial](https://medium.com/@gulfsteve/hacking-with-wsl2-ede3e649e08
 
 ## Cyber Kill Chain
 According to Lockheed Martin, the Cyber Kill Chain
-- Recon: The first step is discovering and collecting information on the system and the victim. The reconnaissance phase is the planning phase for the adversaries.
+- <ins>Recon:</ins> The first step is discovering and collecting information on the system and the victim. The reconnaissance phase is the planning phase for the adversaries.
 
-- Weaponization: This step refers to preparing a file with a malicious component, for example, to provide the attacker with remote access.
+- <ins>Weaponization:</ins> This step refers to preparing a file with a malicious component, for example, to provide the attacker with remote access.
 
-- Delivery: Delivery means delivering the “weaponized” file to the target via any feasible method, such as email or USB flash memory.
+- <ins>Delivery:</ins> Delivery means delivering the “weaponized” file to the target via any feasible method, such as email or USB flash memory.
 
-- Exploitation: When the user opens the malicious file, their system executes the malicious component.
+- <ins>Exploitation:</ins> When the user opens the malicious file, their system executes the malicious component.
 
-- Installation: The previous step should install the malware on the target system.
+- <ins>Installation:</ins> The previous step should install the malware on the target system.
 
-- Command & Control (C2): The successful installation of the malware provides the attacker with a command and control ability over the target system.
+- <ins>Command & Control (C2):</ins> The successful installation of the malware provides the attacker with a command and control ability over the target system.
 
-- Actions on Objectives: After gaining control over one target system, the attacker has achieved their objectives. One example objective is Data Exfiltration (stealing target’s data).
+- <ins>Actions on Objectives:</ins> After gaining control over one target system, the attacker has achieved their objectives. One example objective is Data Exfiltration (stealing target’s data).
 
 
 ### Recon
@@ -77,20 +77,38 @@ Some curl examples:
 
 #### Recon Tools
 <ins>NMAP</ins>
-Nmap (“Network Mapper”) is an open source tool for network exploration and security auditing... more info on [the nmap website ](https://nmap.org)
+Nmap the “Network Mapper”, is an open source tool for network exploration and security auditing... more info on [the nmap website ](https://nmap.org)
 
 <ins>Enum4linux</ins>
 With this tool enumeration of SMB shares, on both Windows and Linux systems, is made straigh forward. It is basically a wrapper around the tools in the Samba package and makes it easy to quickly extract information from the target pertaining to SMB. It's installed by default on Parrot and Kali, however if you need to install it, you can do so from the official github.
 The syntax of Enum4Linux is nice and simple: "enum4linux [options] ip"
 
 <ins>FFUF</ins>
-Short for Fuzz Faster U Fool. A Go Language user enumeration tool for web applications
+Short for Fuzz Faster U Fool. A Go Language user enumeration tool for web applications.
 
-<ins>Smbmap / smbclient</ins>
+<ins>smbmap / smbclient</ins>
 These tools are used for enumerating smbshares on default ports 139 and 445 from a targeted devices.
     smbmap -H [TARGET-IP]
 
 <ins>Wpscan</ins>
+THis tool is used to enumerate Wordpress websites.
+    wpscan -h
+
+### Weaponization
+Weaponization, the second phase of the cyber kill chain following reconnaissance, involves creating malicious payloads designed to exploit identified vulnerabilities. Upon successful delivery and execution, these weaponized payloads deploy malware, leading to system compromise. Knowing file extentions and how files are recognized by anti virus software, this will help you in how to use file obfuscation to your benefits.
+
+An example would be Malicious Macro
+A macro is an automated input sequence that imitates keystrokes or mouse actions. A macro is typically used to replace a repetitive series of keyboard and mouse actions and are common in spreadsheet and word processing applications like MS Excel and MS Word. A malicious macro, or macro virus is a computer virus that replaces a macro. When these actions and commands are replaced by a virus, this can cause significant harm to a computer.
+
+Inserted in this weaponized file will be a shell. This can simply be described as a piece of code or program which can be used to gain code or command execution on a device. A reverse shell is a type of shell in which the target machine communicates back to the attacking machine. Commonly a script is run on the target machine which tries to call back to the attachers machine. On the attakers machine a listening tool is waiting for the incomming connection.
+
+#### Weaponization Tools
+With the help of tools like Metasploit Malicious Macros can be compiled.
+
+### Delivery
+The art of getting your weaponized file to your Target. this can happen by mail or through file sharing.
+
+### Exploitation
 
 
 #### Exploitation Tools
@@ -124,6 +142,8 @@ hydra -t 4 -l dale -P /usr/share/wordlists/rockyou.txt -vV [TARGET IP] ftp
 
 <ins>John</ins>
 Also known as John the ripper is a multi brute force tool
+
+
 
 
 
