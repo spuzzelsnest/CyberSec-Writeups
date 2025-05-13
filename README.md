@@ -195,6 +195,7 @@ These tools automate the work off enumaration by using a predefind set of charac
 As this enumeration is done through CPU or GPU cycles and happens, depending on the machine, in mear seconds of what a human could input. These tools can be verry noisy, so they should be used carefully.
 
 <ins>wordlist</ins>
+
 To use dictionary attacs, a wordlist is needed. Some linux distro's come with their own available dictionaries. You can probably find them under ``` /usr/share/wordlists ```
 
 <ins>Dirbuster / Gobuster</ins>
