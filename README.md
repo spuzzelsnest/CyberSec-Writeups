@@ -75,6 +75,7 @@ Ports 0 through 1023 are defined as well-known ports. Registered ports are from 
 - Port 3389: The standard port for RDP connections.
 
 <ins>Website reconnaissance</ins>
+
 When visiting a website via a browser, when clicking or typing the URL a lot of stuff goes on in the back. GET and REDIRECT request happen in a split second before you see the website apear in your browser.
 To summarise, when you request a website, your computer needs to know the server's IP address it needs to talk to; for this, it uses DNS. Your computer then talks to the web server using a special set of commands called the HTTP protocol; the webserver then returns HTML, JavaScript, CSS, Images, etc., which your browser then uses to correctly format and display the website to you.
 A lot of other tools can be used to view a information of a website besides a browser. I am referring to tools like: curl, wget, nslookup, dig, who can give info on and many others.
@@ -124,6 +125,7 @@ This tool is used to enumerate Wordpress websites.
 Weaponization, the second phase of the cyber kill chain following reconnaissance, involves creating malicious payloads designed to exploit identified vulnerabilities. Upon successful delivery and execution, these weaponized payloads deploy malware, leading to system compromise. Knowing file extentions and how files are recognized by anti virus software, this will help you in how to use file obfuscation to your benefits.
 
 An example would be Malicious Macro
+
 A macro is an automated input sequence that imitates keystrokes or mouse actions. A macro is typically used to replace a repetitive series of keyboard and mouse actions and are common in spreadsheet and word processing applications like MS Excel and MS Word. A malicious macro, or macro virus is a computer virus that replaces a macro. When these actions and commands are replaced by a virus, this can cause significant harm to a computer.
 
 Inserted in this weaponized file will be a shell. This can simply be described as a piece of code or program which can be used to gain code or command execution on a device. A reverse shell is a type of shell in which the target machine communicates back to the attacking machine. Commonly a script is run on the target machine which tries to call back to the attachers machine. On the attakers machine a listening tool is waiting for the incomming connection.
