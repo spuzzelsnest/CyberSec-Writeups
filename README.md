@@ -78,6 +78,7 @@ Some curl examples:
 #### Recon Tools
 <ins>NMAP</ins>
 Nmap the “Network Mapper”, is an open source tool for network exploration and security auditing... more info on [the nmap website ](https://nmap.org)
+    nmap -h
 
 <ins>Enum4linux</ins>
 With this tool enumeration of SMB shares, on both Windows and Linux systems, is made straigh forward. It is basically a wrapper around the tools in the Samba package and makes it easy to quickly extract information from the target pertaining to SMB. It's installed by default on Parrot and Kali, however if you need to install it, you can do so from the official github.
@@ -90,7 +91,11 @@ Short for Fuzz Faster U Fool. A Go Language user enumeration tool for web applic
 These tools are used for enumerating smbshares on default ports 139 and 445 from a targeted devices.
     smbmap -H [TARGET-IP]
 
-<ins>Wpscan</ins>
+    smbclient //[TARGET-IP/SHARE -U %
+
+Once you are connected to the SMB server, you can find all the commands that smbclient knows by typing ‘help’. Some commenly used are ls, cd, chmod, mget
+
+<ins>wpscan</ins>
 THis tool is used to enumerate Wordpress websites.
     wpscan -h
 
@@ -109,19 +114,13 @@ With the help of tools like Metasploit Malicious Macros can be compiled.
 The art of getting your weaponized file to your Target. this can happen by mail or through file sharing.
 
 ### Exploitation
-
+In the Exploitation phase, the malicious code is executed within the victim’s system.
 
 #### Exploitation Tools
 <ins>Metasploit</ins>
 
 Installing metasploit 
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
-
-<ins>Smbclient</ins>
-
-smbclient //[TARGET-IP/SHARE -U %
-
-Once you are connected to the SMB server, you can find all the commands that smbclient knows by typing ‘help’. Some commenly used are ls, cd, chmod, mget
 
 ### Brute force tools
 In brute force tools we use wordlist or dictionaries to guess what
