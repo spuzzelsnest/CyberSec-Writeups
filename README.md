@@ -182,6 +182,7 @@ Installing metasploit:
 ```
 
 <ins>netcat</ins>
+
 netcat or nc is a network multipurpose network debugging tool, but mostly associated with exploitation, as it is capable to be used as a listening device for reverse connections.
 
 ```
