@@ -236,3 +236,5 @@ If a linux shell is provide of for instance a webserver, you need to find out wh
 
 Next you will need to find out if permissions are granted to elevate your current permissions.
 
+[More to come]
+...
