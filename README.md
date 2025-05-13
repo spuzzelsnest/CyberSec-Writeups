@@ -195,13 +195,11 @@ These tools automate the work off enumaration by using a predefind set of charac
 As this enumeration is done through CPU or GPU cycles and happens, depending on the machine, in mear seconds of what a human could input. These tools can be verry noisy, so they should be used carefully.
 
 <ins>wordlist</ins>
-
-To use dictionary attacs, a wordlist is needed. Some linux distro's come with their own available dictionaries. You can probably find them under ``` /usr/share/wordlists ```
+To use dictionary attacks, a list of words is needed. One of the most famous used for passwords is probably RockYou, but there are many more for specific use cases. Some linux distro's come with their own wordlists and can be found in ``` /usr/share/wordlists ```
 
 <ins>Dirbuster / Gobuster</ins>
 
 These tools is used for website file and folder enumeration which can be usefull to find hidden folders on a webserver. It uses a wordlist to go through GET request.
-
 
 Example:
 ```
