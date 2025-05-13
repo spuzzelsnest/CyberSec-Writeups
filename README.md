@@ -81,6 +81,30 @@ When visiting a website via a browser, when clicking or typing the URL a lot of 
 To summarise, when you request a website, your computer needs to know the server's IP address it needs to talk to; for this, it uses DNS. Your computer then talks to the web server using a special set of commands called the HTTP protocol; the webserver then returns HTML, JavaScript, CSS, Images, etc., which your browser then uses to correctly format and display the website to you.
 A lot of other tools can be used to view a information of a website besides a browser. I am referring to tools like: curl, wget, nslookup, dig, who can give info on and many others.
 
+An example of a wget command, which is nothing more then a command line URI request, that will save the page requested.
+
+```
+    wget google.com
+
+    Prepended http:// to 'google.com'
+    --YYYY-MM-DD HH:MM:SS--  http://google.com/
+    Resolving google.com (google.com)... 172.217.23.206
+    Connecting to google.com (google.com)|172.217.23.206|:80... connected.
+    HTTP request sent, awaiting response... 301 Moved Permanently
+    Location: http://www.google.com/ [following]
+    --YYYY-MM-DD HH:MM:SS--  http://www.google.com/
+    Resolving www.google.com (www.google.com)... 142.251.36.36
+    Connecting to www.google.com (www.google.com)|142.251.36.36|:80... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: unspecified [text/html]
+    Saving to: ‘index.html’
+
+    index.html                   [ <=>                             ]  17.65K  --.-KB/s    in 0.005s  
+
+    YYYY-MM-DD HH:MM:SS (3.53 MB/s) - ‘index.html’ saved [18072]
+
+```
+
 #### Recon Tools
 <ins>NMAP</ins>
 
