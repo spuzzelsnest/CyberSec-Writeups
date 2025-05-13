@@ -191,7 +191,8 @@ netcat or nc is a network multipurpose network debugging tool, but mostly associ
 ```
 
 ### Brute force tools
-In brute force tools we use wordlist or dictionaries to guess what
+These tools automate the work off enumaration by using a predefind set of characters or dictionary to go to every possible combination, feeding the tool to guess a possible success.
+As this enumeration is done through CPU or GPU cycles and happens, depending on the machine, in mear seconds of what a human could input. These tools can be verry noisy, so they should be used carefully.
 
 <ins>Dirbuster</ins>
 
