@@ -4,9 +4,9 @@ This is an introductional writeup on how to setup a base station for a Capture t
 ## Base Station
 Some people choose to have a dedicated machine, some choose to run everything in virtual machines. As I will not go over every part of the setup of a base station, I will reference other peoples work that I found helpfull.
 
-### Linux Distro
+### Linux Distro's
 
-- <ins>Kali</ins>
+- <ins>Kali Linux</ins>
   
     :arrow_down: [Choose your ISO - Download Page](https://www.kali.org/get-kali/#kali-platforms)
 - <ins>Parrot OS</ins>
@@ -14,12 +14,12 @@ Some people choose to have a dedicated machine, some choose to run everything in
     :arrow_down: [Choose your ISO - Download Page](https://parrotsec.org/download/)
 - <ins>Build your own</ins>
 
-    You can start setting up your own station by just downloading a clean Ubuntu or Debian Distro and add the described tools.
+    You can start setting up your own base station by just downloading a clean Ubuntu or Debian Distro and add the described tools.
 
 ### Virtual Machines
-For the people running from a virtual machine on Windows, there are a couple of free options. All come with there own drawbacks.
+You can run your base station as a virtual machine on Windows, there are a couple of free options. All come with their own drawbacks.
 
-- <ins>VMware</ins>
+- <ins>VMWare</ins>
 
     [NAKIVO Team](https://www.nakivo.com/blog/install-kali-linux-vmware/)
 
@@ -34,7 +34,10 @@ For the people running from a virtual machine on Windows, there are a couple of 
 
 
 ## Cyber Kill Chain
-According to Lockheed Martin, the Cyber Kill Chain
+Developed by Lockheed Martin, the Cyber Kill Chain framework is part of the Intelligence Driven Defense model for identification and prevention of cyber intrusions activity. The model identifies what the adversaries must complete in order to achieve their objective.The seven steps of the Cyber Kill Chain enhance visibility into an attack and enrich an analyst’s understanding of an adversary’s tactics, techniques and procedures.
+
+According to Lockheed Martin, the Cyber Kill Chain looks like this:
+
 - <ins>Recon:</ins> The first step is discovering and collecting information on the system and the victim. The reconnaissance phase is the planning phase for the adversaries.
 
 - <ins>Weaponization:</ins> This step refers to preparing a file with a malicious component, for example, to provide the attacker with remote access.
