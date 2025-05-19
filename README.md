@@ -214,7 +214,7 @@ Hydra is a very fast online password cracking tool, which can perform rapid dict
 The syntax for the command we're going to use to find the passwords is this:
 
 ```
-    hydra -t 4 -l dale -P /usr/share/wordlists/rockyou.txt -vV [TARGET IP] ftp
+    hydra -t 4 -l [USERNAME] -P /usr/share/wordlists/rockyou.txt -vV [TARGET IP] ftp
 
 ```
 
