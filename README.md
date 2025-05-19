@@ -234,6 +234,13 @@ If a linux shell is provide of for instance a webserver, you need to find out wh
 ```
 
 Next you will need to find out if permissions are granted to elevate your current permissions.
+An example on how to find executables on linux that have admin permissions is by finding  SUID files
+
+```
+find / -perm -u=s 2>/dev/null
+find / -perm +4000 2>/dev/null
+
+```
 
 
 After getting root, it's time to get persistence. Here are some examples of getting persistence
