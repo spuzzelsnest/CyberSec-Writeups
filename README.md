@@ -31,8 +31,9 @@ You can run your base station as a virtual machine on Windows, there are a coupl
 
     Windows subsystem for Linux is also a handy way to start with a Cyber Securtiy workstation. This will allow you to run linux native commands from within the native Winodws Command line.
 
+    [For The Kali linux website](https://www.kali.org/docs/wsl/wsl-preparations/)
+  or
     [By Steve McIlwain](https://medium.com/@gulfsteve/hacking-with-wsl2-ede3e649e08d)
-
 
 ## Cyber Kill Chain
 Developed by Lockheed Martin, the Cyber Kill Chain framework is part of the Intelligence Driven Defense model for identification and prevention of cyber intrusions activity. The model identifies what the adversaries must complete in order to achieve their objective.The seven steps of the Cyber Kill Chain enhance visibility into an attack and enrich an analyst’s understanding of an adversary’s tactics, techniques and procedures.
