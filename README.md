@@ -225,17 +225,25 @@ Also known as John the ripper is a multi brute force tool
 
 ### Command & Control and Post Exploitation
 Once you have controll of a system and have an active shell, you should take a couple of steps back. Will persistance be needed or is it a quick in-out mission?
-First lest go over root access before going of persistance.
+First lest go over root access before going of persistence.
 
 If a linux shell is provide of for instance a webserver, you need to find out what permissions is granted to the user you are currently logged in with.
 
-
 ```
     whoami
-
 ```
 
 Next you will need to find out if permissions are granted to elevate your current permissions.
 
-[More to come]
+
+After getting root, it's time to get persistence. Here are some examples of getting persistence
+- installing a web shell on the server, where you reconnect through a web app script.
+- installing a backdoor that calls back home to a C&C server
+- Installing a backdoor by migrating to a specific service or process that could run on startup.
+
+According to [MITRE ATT&CK](https://attack.mitre.org/techniques/T1547/001/), there is a startup folder location for individual user accounts and a system-wide startup folder that will be checked no matter what user account logs in.
+
+
+
+[More to come - Last update 05/19]
 ...
