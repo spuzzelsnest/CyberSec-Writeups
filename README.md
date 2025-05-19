@@ -241,7 +241,7 @@ find / -perm -u=s 2>/dev/null
 find / -perm +4000 2>/dev/null
 
 ```
-
+An exelent website to find escalation permissions is [gtfobins](https://gtfobins.github.io).
 
 After getting root, it's time to get persistence. Here are some examples of getting persistence
 - installing a web shell on the server, where you reconnect through a web app script.
